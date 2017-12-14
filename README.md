@@ -8,7 +8,6 @@ Exercise for some programming language.
 3. Turbo C
 4. Data Structure
 5. Interview
-6. Practice
 
 [Python]:
 0. Practice
