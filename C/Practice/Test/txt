@@ -1,0 +1,22 @@
+matchBonjourVlanList, ifName=[eth0]
+matchBonjourVlanList, bonjour.vlanList[0]=[917504], lanIpIf.name=[DEFAULT]
+matchBonjourVlanList, vlanList=[DEFAULT;]
+SetupOneInterface, hit_flag=[-1]
+matchBonjourVlanList, ifName=[DEFAULT]
+matchBonjourVlanList, bonjour.vlanList[0]=[917504], lanIpIf.name=[DEFAULT]
+matchBonjourVlanList, vlanList=[DEFAULT;]
+SetupOneInterface, hit_flag=[1]
+matchBonjourVlanList, ifName=[GUEST]
+matchBonjourVlanList, bonjour.vlanList[0]=[917504], lanIpIf.name=[DEFAULT]
+matchBonjourVlanList, vlanList=[DEFAULT;]
+SetupOneInterface, hit_flag=[-1]
+matchBonjourVlanList, ifName=[VOICE]
+matchBonjourVlanList, bonjour.vlanList[0]=[917504], lanIpIf.name=[DEFAULT]
+matchBonjourVlanList, vlanList=[DEFAULT;]
+SetupOneInterface, hit_flag=[-1]
+1.75.168.192.in-addr.arpa.
+1.75.168.192.in-addr.arpa. PTR Trying multicast
+1.75.168.192.in-addr.arpa. PTR router1C0622.local.
+router1C0622.local. ANY Trying multicast
+router1C0622.local. Addr 192.168.75.1
+Host has no HINFO record; Best guess is Jaguar version of mDNSResponder with no IPv6 support

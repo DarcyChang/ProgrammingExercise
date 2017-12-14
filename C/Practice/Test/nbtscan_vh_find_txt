@@ -1,0 +1,16 @@
+Doing NBT name scan for addresses from 192.168.1.102
+
+
+NetBIOS Name Table for Host 192.168.1.102:
+
+Name             Service          Type             
+----------------------------------------
+12012621-NB01    Workstation Service
+GEMTEKS          Domain Name
+12012621-NB01    File Server Service
+GEMTEKS          Browser Service Elections
+GEMTEKS          Master Browser
+__MSBROWSE__  Master Browser
+
+Adapter address: 54-04-a6-a9-0d-a1
+----------------------------------------

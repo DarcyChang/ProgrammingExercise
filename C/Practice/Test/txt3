@@ -1,0 +1,18 @@
+matchBonjourVlanList, ifName=[eth0]
+matchBonjourVlanList, bonjour.vlanList[0]=[917504], lanIpIf.name=[DEFAULT]
+matchBonjourVlanList, vlanList=[DEFAULT;]
+SetupOneInterface, hit_flag=[-1]
+matchBonjourVlanList, ifName=[DEFAULT]
+matchBonjourVlanList, bonjour.vlanList[0]=[917504], lanIpIf.name=[DEFAULT]
+matchBonjourVlanList, vlanList=[DEFAULT;]
+SetupOneInterface, hit_flag=[1]
+matchBonjourVlanList, ifName=[GUEST]
+matchBonjourVlanList, bonjour.vlanList[0]=[917504], lanIpIf.name=[DEFAULT]
+matchBonjourVlanList, vlanList=[DEFAULT;]
+SetupOneInterface, hit_flag=[-1]
+matchBonjourVlanList, ifName=[VOICE]
+matchBonjourVlanList, bonjour.vlanList[0]=[917504], lanIpIf.name=[DEFAULT]
+matchBonjourVlanList, vlanList=[DEFAULT;]
+SetupOneInterface, hit_flag=[-1]
+10.100.1000.10000. ANY *** No Answer ***
+Incorrect dot-local hostname, address, or no mDNSResponder running on that machine

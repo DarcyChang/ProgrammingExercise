@@ -1,0 +1,24 @@
+matchBonjourVlanList, ifName=[eth0]
+matchBonjourVlanList, bonjour.vlanList[0]=[917504], lanIpIf.name=[DEFAULT]
+matchBonjourVlanList, vlanList=[DEFAULT;]
+SetupOneInterface, hit_flag=[-1]
+matchBonjourVlanList, ifName=[DEFAULT]
+matchBonjourVlanList, bonjour.vlanList[0]=[917504], lanIpIf.name=[DEFAULT]
+matchBonjourVlanList, vlanList=[DEFAULT;]
+SetupOneInterface, hit_flag=[1]
+matchBonjourVlanList, ifName=[GUEST]
+matchBonjourVlanList, bonjour.vlanList[0]=[917504], lanIpIf.name=[DEFAULT]
+matchBonjourVlanList, vlanList=[DEFAULT;]
+SetupOneInterface, hit_flag=[-1]
+matchBonjourVlanList, ifName=[VOICE]
+matchBonjourVlanList, bonjour.vlanList[0]=[917504], lanIpIf.name=[DEFAULT]
+matchBonjourVlanList, vlanList=[DEFAULT;]
+SetupOneInterface, hit_flag=[-1]
+108.75.168.192.in-addr.arpa.
+108.75.168.192.in-addr.arpa. PTR Administratormato-iPad.local.
+Administratormato-iPad.local. AAAA FE80:0000:0000:0000:A6D1:D2FF:FEAE:5E2C
+Administratormato-iPad.local. Addr 192.168.75.108
+Administratormato-iPad.local. ANY Trying multicast
+Administratormato-iPad.local. AAAA FE80:0000:0000:0000:A6D1:D2FF:FEAE:5E2C
+Administratormato-iPad.local. Addr 192.168.75.108
+Host has no HINFO record; Best guess is very early Panther build (mDNSResponder-33 or earlier)
