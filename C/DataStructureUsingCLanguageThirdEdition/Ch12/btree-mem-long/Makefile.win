@@ -1,0 +1,36 @@
+# Project: btree
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = btree.o my_assert.o demo_btree.o $(RES)
+LINKOBJ  = btree.o my_assert.o demo_btree.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib"  
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
+BIN  = btree.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before btree.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "btree.exe" $(LIBS)
+
+btree.o: btree.c
+	$(CC) -c btree.c -o btree.o $(CFLAGS)
+
+my_assert.o: my_assert.c
+	$(CC) -c my_assert.c -o my_assert.o $(CFLAGS)
+
+demo_btree.o: demo_btree.c
+	$(CC) -c demo_btree.c -o demo_btree.o $(CFLAGS)

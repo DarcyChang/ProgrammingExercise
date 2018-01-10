@@ -1,0 +1,33 @@
+# Project: AppB-3-1
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = AppB-3-1.o Ch1-4.o $(RES)
+LINKOBJ  = AppB-3-1.o Ch1-4.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib"  
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
+BIN  = AppB-3-1.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before AppB-3-1.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "AppB-3-1.exe" $(LIBS)
+
+AppB-3-1.o: AppB-3-1.c
+	$(CC) -c AppB-3-1.c -o AppB-3-1.o $(CFLAGS)
+
+Ch1-4.o: Ch1-4.c
+	$(CC) -c Ch1-4.c -o Ch1-4.o $(CFLAGS)
