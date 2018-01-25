@@ -8,11 +8,13 @@ Exercise for some programming language.
 3. Turbo C
 4. Data Structure
 5. Interview
+6. TheArtOfPointerBeautifulStar
+7. TheReturnOfTheKing
 
 [Python]:
 0. Practice
 1. Head First
 2. Share Course
 
-How to push?
+How do you push codes into github ?
 git push -u origin
