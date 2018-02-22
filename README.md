@@ -10,6 +10,8 @@ Exercise for some programming language.
 5. Interview
 6. TheArtOfPointerBeautifulStar
 7. TheReturnOfTheKing
+8. DataStructure_Tsai  
+9. DataStructureUsingCLanguageThirdEdition
 
 [Python]:
 0. Practice
